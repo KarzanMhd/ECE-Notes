@@ -1,0 +1,96 @@
+<meta name="viewport" content="width=device-width, imitial-scale=1.0">
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>LittleSlideshow Demo</title>
+	
+		<meta charset="utf-8">
+<!--jQuery-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		
+<!-- LittleSlideshow JS-->
+<script src="js/littleslideshow.min.js"></script>
+		
+<!--LittleSlideShow CSS-->
+<link rel="stylesheet" href="css/littleslideshow.min.css">
+		
+	<style>
+		body{background-color:silver;}
+		h1 {text-align: center; }
+		</style>
+
+		<script>
+			jQuery(document).ready(function($) {
+				var images = 
+					[
+						
+						{
+							src: 'images/img2.jpg',
+							alt: 'Second image'
+						},
+						{
+							src: 'images/img3.jpg',
+							alt: 'Third image'
+						},
+						{
+							src: 'images/img4.jpg',
+							alt: 'Fourth image'
+						},
+						
+						{
+							src: 'images/img6.jpg',
+							alt: 'Sixth image'
+						},
+						{
+							src: 'images/img7.jpg',
+							alt: 'Seventh image'
+						},
+						{
+							src: 'images/img8.jpg',
+							alt: 'www.codehim.com'
+						},
+						{
+							src: 'images/img9.jpeg',
+							alt: 'Ninth image'
+						},
+						
+					];
+					
+				var options =
+					{
+						maxHeight: 400,
+						maxThumbnailHeight: 50
+					};
+			
+				$('#slideshow').LittleSlideshow(images, options);
+			});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center" style=" background-color:DimGray; color:gold;">
+					<h1 style="text-align:center;">Electrical and Computer Engineering</h1>
+                                        <h2 style="text-align:center;">Karzan Mohammad Ismael</h2>
+                                       
+				</div>
+			</div>
+		</div>
+	
+		<div id="slideshow"></div>
+
+
+<div class="sub">
+<center>
+<h1>Click the links below</h1>
+
+
+<p><b><a href="s1.html" target="_self" style="background-color:DimGray;color:gold;text-decoration:none;"><h2>&emsp;&emsp;&emsp;Semester 1&emsp;&emsp;&emsp;</h2></a></b></p>
+<p><b><a href="s2.html" target="_self" style="background-color:DimGray; color:gold;text-decoration:none;"><h2>&emsp;&emsp;&emsp;Semester 2&emsp;&emsp;&emsp;</h2></a></b></p>
+
+</center>
+</div>
+
+	</body>
+</html>
